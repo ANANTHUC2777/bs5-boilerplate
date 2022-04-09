@@ -1,0 +1,135 @@
+/********* FOOTER *********/
+@use "abstract/" as *;
+footer {
+  background: url("../img/footerbg.png") no-repeat center;
+  background-size: cover;
+  height: 40.8rem;
+}
+.footer {
+  &-wrap {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 102.4rem;
+    align-items: baseline;
+    margin: 5.3rem 0;
+    padding: 0 5.3rem;
+  }
+  &-col {
+    &__logoImg {
+      img {
+        max-width: 26.1rem;
+      }
+    }
+    h6 {
+      margin-bottom: 1.8rem;
+      color: $white--color;
+      font: 700 2.4rem/2.88rem $barlow-bold, sans-serif;
+    }
+    ul {
+      li {
+        margin-bottom: 1.8rem;
+        a {
+          color: $white--color;
+          font: 400 1.6rem/2.1rem $opensans-regular, sans-serif;
+        }
+        p {
+          color: $white--color;
+          font: 400 1.6rem/2.1rem $opensans-regular, sans-serif;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &-subcol {
+    li {
+      margin-right: 0.8rem;
+      img {
+        max-width: 3.2rem;
+      }
+    }
+  }
+  &-copyright {
+    background-color: $theme--green;
+    p {
+      margin-bottom: 0;
+      text-align: center;
+      font: 500 1.6rem/1.9rem $barlow-regular, sans-serif;
+      color: $white--color;
+      padding: 1.5rem;
+    }
+  }
+}
+.whatsapp-widget {
+  position: fixed;
+  top: 30rem;
+  right: 0;
+  z-index: 9;
+  &-wrap {
+    max-width: 150rem;
+    background: linear-gradient(
+      98.57deg,
+      rgba(87, 179, 62, 0.19) -8.97%,
+      rgba(87, 179, 62, 0.19) 111.19%,
+      rgba(87, 179, 62, 0) 122.56%
+    );
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    img {
+      max-width: 3.6rem;
+    }
+    p {
+      font: 500 1.6rem/1.9rem $barlow-medium, sans-serif;
+      color: $theme--light--black;
+    }
+  }
+}
+@include media(1199px) {
+  footer {
+    height: 100%;
+  }
+  .footer-col {
+    flex-basis: 50%;
+    margin-bottom: 4rem;
+    max-width: 28rem;
+  }
+  .footer-wrap {
+    max-width: 75rem;
+  }
+}
+@include media(767px) {
+  .footer-col {
+    flex-basis: 100%;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+  }
+  .footer-subcol ul {
+    justify-content: center;
+  }
+  .justify--center {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@include media(575px) {
+  .whatsapp-widget {
+    top: 25rem;
+  }
+}
+@include media(375px) {
+  .justify--center {
+    p,
+    a {
+      flex-basis: 100%;
+    }
+    p {
+      margin-bottom: 1rem !important;
+    }
+  }
+  .footer-col__logoImg img {
+    max-width: 100%;
+  }
+}

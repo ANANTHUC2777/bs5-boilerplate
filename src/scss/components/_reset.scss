@@ -1,0 +1,75 @@
+/*!
+ * HAMSTER STYLESHEET
+ * 
+ *   AUTHOR:  ANANTHU
+ *   WRITTEN ON:16 MARCH 2022
+ *   VERSION : 2.0.2(IPHONE MENU ISSUE FIX)
+       1:HOME PAGE
+       2:ABOUT PAGE
+       3:REGISTRATION PAGE
+       4:PRODUCT LISTING PAGE
+       5:PRODUCT DETAILS PAGE
+       6:EWASTE PAGE
+       7:TERMS AND CONDITIONS PAGE
+       8:PRIVACY POLICY PAGE
+       9:WARRANTY PAGE
+*/
+/********** RESET CSS ***********/
+* {
+  &::after,
+  &::before {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: inherit;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+p {
+  margin-bottom: 0;
+}
+.btn.focus,
+.btn:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 120rem;
+  }
+}

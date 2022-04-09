@@ -1,0 +1,56 @@
+/********** BUTTONS ***********/
+@use "abstract/" as *;
+.register__btn {
+  max-width: 20rem;
+  display: block;
+  text-align: center;
+  height: 6rem;
+  background: $white--color;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  font: 700 2.4rem/2.9rem $barlow-bold, sans-serif;
+  color: $theme--green;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $theme--green;
+    color: $white--color;
+  }
+}
+.registration__btn {
+  width: 18.4rem;
+  margin-top: 3.2rem;
+  text-align: center;
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $theme--green;
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  font: 700 2.4rem/2.9rem $barlow-semibold, sans-serif;
+  color: $white--color;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: $white--color;
+    color: $theme--green;
+    border: 1px solid $theme--green;
+  }
+}
+.view__details__btn {
+  width: 21.9rem;
+  text-align: center;
+  height: 6.4rem;
+  background: $white--color;
+  padding: 1.5rem;
+  border: 1px solid $theme--green;
+  border-radius: 0.5rem;
+  font: 600 2.4rem/2.9rem $barlow-semibold, sans-serif;
+  color: $theme--green;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $theme--green;
+    color: $white--color;
+  }
+}

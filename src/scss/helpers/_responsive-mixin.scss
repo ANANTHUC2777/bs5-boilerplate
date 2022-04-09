@@ -1,0 +1,18 @@
+/********* RESPONSIVE QUERY *********/
+@mixin media($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin lgmedia($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin respond-between($lower, $upper) {
+    @media (min-width: $lower) and (max-width: $upper) {
+        @content;
+    }
+}

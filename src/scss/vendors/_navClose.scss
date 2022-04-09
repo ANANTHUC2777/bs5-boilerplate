@@ -1,0 +1,17 @@
+/********* NAV CLOSE *********/
+.d--none {
+    display: none!important;
+}
+
+.icon-bar {
+    transition: .3s ease-in-out;
+}
+
+.rotate--45 {
+    transform: rotate(45deg);
+}
+
+.rotate--neg-45 {
+    transform: rotate(-45deg);
+    margin-top: -2px!important;
+}

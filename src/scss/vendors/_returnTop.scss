@@ -1,0 +1,27 @@
+/********* RETURN TO TOP *********/
+@use "abstract/" as *;
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #dff1da;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 99;
+    padding-top: 8px;
+    text-align: center;
+    color: $theme--green;
+    font-size: 2.1rem;
+    box-shadow: 0px 1px 6px rgba(51, 60, 127, 0.33);
+    &:hover {
+        background: $theme--green;
+        color: #dff1da;
+    }
+}
